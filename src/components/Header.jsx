@@ -1,4 +1,5 @@
 import React, {useState, useContext} from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import Menu from '@components/Menu';
 import MyOrder from '@containers/MyOrder';
@@ -39,9 +40,9 @@ const Header = () => {
 				onClick={ () => handleToggleMenues("mobileMenu")}
 			/>
 			<div className={styles["navbar-left"]}>
-				<a href="./" className={styles["nav-logo"]}>
+				<Link href="/" className={styles["nav-logo"]}>
 					<Image src={logo} alt="logo" />
-				</a>
+				</Link>
 				<ul>
 					<li>
 						<a href="./">All</a>

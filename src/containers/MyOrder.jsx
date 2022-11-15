@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Link from 'next/link';
 import OrderItem from '@components/OrderItem';
 import AppContext from '@context/AppContext'
 import flecha from '@icons/flechita.svg';
@@ -30,9 +31,9 @@ const MyOrder = ({ setToggleOrders }) => {
 				</p>
 				<p>${sumTotal()}</p>
 			</div>
-			<button className="primary-button">
+			<Link className="primary-button" href="checkout">
 				Checkout
-			</button>
+			</Link>
 		</aside>
 	);
 }
