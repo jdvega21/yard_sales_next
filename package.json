@@ -1,6 +1,8 @@
 {
   "name": "yardsalesstore",
   "version": "0.1.0",
+  "owner"  : "Jesus David Vega Porras"
+  "license": "UNLICENSED"
   "private": true,
   "scripts": {
     "dev": "next dev",
